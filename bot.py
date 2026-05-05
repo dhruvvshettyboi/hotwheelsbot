@@ -91,14 +91,14 @@ def pincode_to_coords(pincode):
 #  BLINKIT SEARCH
 # ======================================================
 
-BLINKIT_SEARCH_URL = "https://api.blinkit.com/v2/products/search/"
+BLINKIT_SEARCH_URL = "https://api.blinkit.com/v3/products/search/"
 
 def search_blinkit(lat, lon, keyword):
     headers = {
         "app_client": "consumer",
         "lat": str(lat),
         "lon": str(lon),
-        "User-Agent": "Mozilla/5.0 (compatible; BlinkitBot)",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
         "Accept": "application/json",
         "Content-Type": "application/json",
     }

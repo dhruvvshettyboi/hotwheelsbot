@@ -1,0 +1,548 @@
+2026-05-05 17:12:13,574 | ERROR | Bot crashed: Traceback (most recent call last):
+  File "C:\Users\Dell\hotwheels-bot\bot.py", line 393, in main
+    app = Application.builder().token(BOT_TOKEN).build()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python314\Lib\site-packages\telegram\ext\_applicationbuilder.py", line 312, in build
+    updater = Updater(bot=bot, update_queue=update_queue)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python314\Lib\site-packages\telegram\ext\_updater.py", line 128, in __init__
+    self.__polling_cleanup_cb: Optional[Callable[[], Coroutine[Any, Any, None]]] = None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes
+
+2026-05-05 17:12:33,448 | ERROR | Bot crashed: Traceback (most recent call last):
+  File "C:\Users\Dell\hotwheels-bot\bot.py", line 393, in main
+    app = Application.builder().token(BOT_TOKEN).build()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python314\Lib\site-packages\telegram\ext\_applicationbuilder.py", line 312, in build
+    updater = Updater(bot=bot, update_queue=update_queue)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python314\Lib\site-packages\telegram\ext\_updater.py", line 128, in __init__
+    self.__polling_cleanup_cb: Optional[Callable[[], Coroutine[Any, Any, None]]] = None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes
+
+2026-05-05 17:16:52,812 | ERROR | Bot crashed: Traceback (most recent call last):
+  File "C:\Users\Dell\hotwheels-bot\bot.py", line 393, in main
+    app = Application.builder().token(BOT_TOKEN).build()
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python314\Lib\site-packages\telegram\ext\_applicationbuilder.py", line 312, in build
+    updater = Updater(bot=bot, update_queue=update_queue)
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python314\Lib\site-packages\telegram\ext\_updater.py", line 128, in __init__
+    self.__polling_cleanup_cb: Optional[Callable[[], Coroutine[Any, Any, None]]] = None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes
+
+2026-05-05 17:17:58,499 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-05 17:17:58,507 | ERROR | Bot crashed: Traceback (most recent call last):
+  File "C:\Users\Dell\hotwheels-bot\bot.py", line 413, in main
+    scheduler.start()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python314\Lib\site-packages\apscheduler\schedulers\asyncio.py", line 36, in start
+    self._eventloop = asyncio.get_running_loop()
+                      ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+2026-05-05 17:20:09,262 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-05 17:20:09,266 | ERROR | Bot crashed: Traceback (most recent call last):
+  File "C:\Users\Dell\hotwheels-bot\bot.py", line 413, in main
+    scheduler.start()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python314\Lib\site-packages\apscheduler\schedulers\asyncio.py", line 36, in start
+    self._eventloop = asyncio.get_running_loop()
+                      ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+2026-05-05 17:20:47,590 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-05 17:20:47,592 | ERROR | Bot crashed: Traceback (most recent call last):
+  File "C:\Users\Dell\hotwheels-bot\bot.py", line 413, in main
+    scheduler.start()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Dell\AppData\Local\Programs\Python\Python314\Lib\site-packages\apscheduler\schedulers\asyncio.py", line 36, in start
+    self._eventloop = asyncio.get_running_loop()
+                      ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+2026-05-05 17:24:16,275 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getMe "HTTP/1.1 200 OK"
+2026-05-05 17:24:16,278 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-05 17:24:16,279 | INFO | Scheduler started: checking every 30 minutes.
+2026-05-05 17:24:16,419 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/deleteWebhook "HTTP/1.1 200 OK"
+2026-05-05 17:24:16,421 | INFO | Added job "blinkit_monitor" to job store "default"
+2026-05-05 17:24:16,422 | INFO | Scheduler started
+2026-05-05 17:24:16,422 | INFO | Application started
+2026-05-05 17:24:26,283 | INFO | Running job "blinkit_monitor (trigger: interval[0:30:00], next run at: 2026-05-05 12:24:26 UTC)" (scheduled at 2026-05-05 11:54:26.276868+00:00)
+2026-05-05 17:24:26,284 | INFO | Scheduled check triggered.
+2026-05-05 17:24:26,284 | INFO | No chat_id yet -- send /start to your bot first.
+2026-05-05 17:24:26,285 | INFO | Job "blinkit_monitor (trigger: interval[0:30:00], next run at: 2026-05-05 12:24:26 UTC)" executed successfully
+2026-05-05 17:24:26,811 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:24:30,543 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:24:31,144 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:24:40,677 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:24:44,417 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:24:45,055 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:24:46,262 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:24:54,561 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:24:58,575 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:24:59,252 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:25:00,902 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:25:08,181 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:25:08,875 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:25:10,777 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:25:18,324 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:25:28,456 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:25:38,589 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:25:38,729 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:25:39,349 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:25:40,568 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:25:48,873 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:25:59,007 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:26:09,141 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:26:19,276 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:26:29,405 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:26:39,539 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:26:49,675 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:26:59,161 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:26:59,761 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:27:09,306 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:27:19,443 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:27:29,575 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:27:39,708 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:27:49,839 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:27:54,690 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:27:55,393 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:28:04,833 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:28:14,967 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:28:19,002 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:28:19,680 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:28:29,149 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:28:33,454 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:28:34,098 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:28:43,602 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:28:49,129 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:28:49,812 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:28:59,279 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:29:09,412 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:29:17,204 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:29:17,840 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:29:27,347 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:29:37,096 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:29:37,773 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:29:46,818 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:29:47,498 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:29:56,964 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:30:00,783 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:30:01,425 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:30:01,427 | INFO | Checking: 4 pincodes x 9 keywords
+2026-05-05 17:30:02,017 | INFO |   Pincode 400101 | keyword: hot wheels
+2026-05-05 17:30:02,698 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:30:02,700 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:02,701 | INFO |   Pincode 400101 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:30:03,533 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:30:03,536 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:03,536 | INFO |   Pincode 400101 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:30:04,186 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:30:04,189 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:04,189 | INFO |   Pincode 400101 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:30:04,829 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:30:04,831 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:04,831 | INFO |   Pincode 400101 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:30:05,490 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:30:05,492 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:05,493 | INFO |   Pincode 400101 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:30:06,293 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:30:06,295 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:06,295 | INFO |   Pincode 400101 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:30:06,968 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:30:06,970 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:06,971 | INFO |   Pincode 400101 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:30:07,622 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:30:07,623 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:07,624 | INFO |   Pincode 400101 | keyword: Hot Wheels Formula 1
+2026-05-05 17:30:08,268 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:30:08,271 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:08,880 | INFO |   Pincode 400067 | keyword: hot wheels
+2026-05-05 17:30:09,668 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:30:09,671 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:09,672 | INFO |   Pincode 400067 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:30:10,344 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:30:10,346 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:10,346 | INFO |   Pincode 400067 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:30:11,001 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:30:11,004 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:11,004 | INFO |   Pincode 400067 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:30:11,663 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:30:11,665 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:11,665 | INFO |   Pincode 400067 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:30:12,298 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:30:12,300 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:12,301 | INFO |   Pincode 400067 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:30:12,972 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:30:12,974 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:12,974 | INFO |   Pincode 400067 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:30:13,634 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:30:13,636 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:13,637 | INFO |   Pincode 400067 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:30:14,443 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:30:14,445 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:14,445 | INFO |   Pincode 400067 | keyword: Hot Wheels Formula 1
+2026-05-05 17:30:15,095 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:30:15,097 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:15,678 | INFO |   Pincode 400097 | keyword: hot wheels
+2026-05-05 17:30:16,332 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:30:16,334 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:16,334 | INFO |   Pincode 400097 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:30:17,158 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:30:17,160 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:17,160 | INFO |   Pincode 400097 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:30:17,840 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:30:17,843 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:17,844 | INFO |   Pincode 400097 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:30:18,622 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:30:18,624 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:18,625 | INFO |   Pincode 400097 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:30:19,433 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:30:19,437 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:19,437 | INFO |   Pincode 400097 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:30:20,107 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:30:20,109 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:20,109 | INFO |   Pincode 400097 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:30:20,758 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:30:20,760 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:20,761 | INFO |   Pincode 400097 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:30:21,413 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:30:21,415 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:21,416 | INFO |   Pincode 400097 | keyword: Hot Wheels Formula 1
+2026-05-05 17:30:22,079 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:30:22,081 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:22,654 | INFO |   Pincode 401203 | keyword: hot wheels
+2026-05-05 17:30:23,426 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:30:23,428 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:23,428 | INFO |   Pincode 401203 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:30:24,093 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:30:24,095 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:24,096 | INFO |   Pincode 401203 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:30:24,747 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:30:24,749 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:24,749 | INFO |   Pincode 401203 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:30:25,421 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:30:25,423 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:25,423 | INFO |   Pincode 401203 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:30:26,062 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:30:26,064 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:26,064 | INFO |   Pincode 401203 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:30:26,755 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:30:26,757 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:26,757 | INFO |   Pincode 401203 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:30:27,524 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:30:27,526 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:27,527 | INFO |   Pincode 401203 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:30:28,199 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:30:28,201 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:28,202 | INFO |   Pincode 401203 | keyword: Hot Wheels Formula 1
+2026-05-05 17:30:28,986 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:30:28,988 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:30:28,989 | INFO | Check complete.
+2026-05-05 17:30:28,992 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:30:29,638 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:30:39,124 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:30:41,355 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:30:42,026 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:30:51,500 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:30:54,992 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:31:05,124 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:31:15,255 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:31:25,387 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:31:35,522 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:31:45,657 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:31:54,946 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:31:54,947 | INFO | Application is stopping. This might take a moment.
+2026-05-05 17:31:54,948 | INFO | Scheduler has been shut down
+2026-05-05 17:31:54,966 | INFO | Application.stop() complete
+2026-05-05 17:32:09,020 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getMe "HTTP/1.1 200 OK"
+2026-05-05 17:32:09,024 | INFO | Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-05 17:32:09,024 | INFO | Scheduler started: checking every 30 minutes.
+2026-05-05 17:32:09,164 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/deleteWebhook "HTTP/1.1 200 OK"
+2026-05-05 17:32:09,166 | INFO | Added job "blinkit_monitor" to job store "default"
+2026-05-05 17:32:09,167 | INFO | Scheduler started
+2026-05-05 17:32:09,167 | INFO | Application started
+2026-05-05 17:32:19,026 | INFO | Running job "blinkit_monitor (trigger: interval[0:30:00], next run at: 2026-05-05 12:32:19 UTC)" (scheduled at 2026-05-05 12:02:19.022345+00:00)
+2026-05-05 17:32:19,027 | INFO | Scheduled check triggered.
+2026-05-05 17:32:19,028 | INFO | Checking: 4 pincodes x 9 keywords
+2026-05-05 17:32:19,641 | INFO |   Pincode 400101 | keyword: hot wheels
+2026-05-05 17:32:20,454 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:32:20,457 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:20,457 | INFO |   Pincode 400101 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:32:21,115 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:32:21,117 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:21,117 | INFO |   Pincode 400101 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:32:21,785 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:32:21,787 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:21,787 | INFO |   Pincode 400101 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:32:22,428 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:32:22,430 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:22,431 | INFO |   Pincode 400101 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:32:23,231 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:32:23,234 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:23,234 | INFO |   Pincode 400101 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:32:23,877 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:32:23,879 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:23,880 | INFO |   Pincode 400101 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:32:24,679 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:32:24,681 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:24,681 | INFO |   Pincode 400101 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:32:25,345 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:32:25,346 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:25,347 | INFO |   Pincode 400101 | keyword: Hot Wheels Formula 1
+2026-05-05 17:32:26,002 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:32:26,004 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:26,598 | INFO |   Pincode 400067 | keyword: hot wheels
+2026-05-05 17:32:27,379 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:32:27,381 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:27,382 | INFO |   Pincode 400067 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:32:28,255 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:32:28,256 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:28,257 | INFO |   Pincode 400067 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:32:28,913 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:32:28,915 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:28,915 | INFO |   Pincode 400067 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:32:29,678 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:32:29,680 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:29,680 | INFO |   Pincode 400067 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:32:30,347 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:32:30,349 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:30,350 | INFO |   Pincode 400067 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:32:30,991 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:32:30,994 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:30,995 | INFO |   Pincode 400067 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:32:31,766 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:32:31,768 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:31,769 | INFO |   Pincode 400067 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:32:32,421 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:32:32,423 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:32,423 | INFO |   Pincode 400067 | keyword: Hot Wheels Formula 1
+2026-05-05 17:32:33,082 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:32:33,084 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:33,713 | INFO |   Pincode 400097 | keyword: hot wheels
+2026-05-05 17:32:34,401 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:32:34,404 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:34,404 | INFO |   Pincode 400097 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:32:35,420 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:32:35,422 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:35,423 | INFO |   Pincode 400097 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:32:36,123 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:32:36,125 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:36,126 | INFO |   Pincode 400097 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:32:37,180 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:32:37,182 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:37,182 | INFO |   Pincode 400097 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:32:37,915 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:32:37,917 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:37,917 | INFO |   Pincode 400097 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:32:38,573 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:32:38,576 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:38,577 | INFO |   Pincode 400097 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:32:39,232 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:32:39,234 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:39,234 | INFO |   Pincode 400097 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:32:39,895 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:32:39,898 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:39,898 | INFO |   Pincode 400097 | keyword: Hot Wheels Formula 1
+2026-05-05 17:32:40,565 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:32:40,566 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:41,393 | INFO |   Pincode 401203 | keyword: hot wheels
+2026-05-05 17:32:42,477 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:32:42,480 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:42,481 | INFO |   Pincode 401203 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:32:43,353 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:32:43,355 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:43,355 | INFO |   Pincode 401203 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:32:44,162 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:32:44,165 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:44,165 | INFO |   Pincode 401203 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:32:44,977 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:32:44,979 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:44,980 | INFO |   Pincode 401203 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:32:45,794 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:32:45,797 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:45,797 | INFO |   Pincode 401203 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:32:46,667 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:32:46,669 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:46,669 | INFO |   Pincode 401203 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:32:47,487 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:32:47,488 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:47,489 | INFO |   Pincode 401203 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:32:48,278 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:32:48,280 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:48,280 | INFO |   Pincode 401203 | keyword: Hot Wheels Formula 1
+2026-05-05 17:32:49,270 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:32:49,272 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:32:49,273 | INFO | Check complete.
+2026-05-05 17:32:49,275 | INFO | Job "blinkit_monitor (trigger: interval[0:30:00], next run at: 2026-05-05 12:32:19 UTC)" executed successfully
+2026-05-05 17:32:49,279 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:32:59,475 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:33:09,609 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:33:19,742 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:33:29,881 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:33:40,017 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:33:50,157 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:34:00,291 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:34:10,431 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:34:19,308 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:34:19,935 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:34:19,937 | INFO | Checking: 4 pincodes x 9 keywords
+2026-05-05 17:34:20,525 | INFO |   Pincode 400101 | keyword: hot wheels
+2026-05-05 17:34:21,177 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:34:21,180 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:21,180 | INFO |   Pincode 400101 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:34:21,987 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:34:21,989 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:21,989 | INFO |   Pincode 400101 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:34:22,645 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:34:22,647 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:22,647 | INFO |   Pincode 400101 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:34:23,452 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:34:23,454 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:23,454 | INFO |   Pincode 400101 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:34:24,216 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:34:24,219 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:24,220 | INFO |   Pincode 400101 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:34:24,880 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:34:24,883 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:24,883 | INFO |   Pincode 400101 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:34:25,538 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:34:25,541 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:25,541 | INFO |   Pincode 400101 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:34:26,352 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:34:26,356 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:26,356 | INFO |   Pincode 400101 | keyword: Hot Wheels Formula 1
+2026-05-05 17:34:27,008 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:34:27,009 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:27,595 | INFO |   Pincode 400067 | keyword: hot wheels
+2026-05-05 17:34:28,425 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:34:28,427 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:28,427 | INFO |   Pincode 400067 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:34:29,075 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:34:29,078 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:29,078 | INFO |   Pincode 400067 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:34:29,721 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:34:29,723 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:29,723 | INFO |   Pincode 400067 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:34:30,650 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:34:30,652 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:30,652 | INFO |   Pincode 400067 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:34:31,420 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:34:31,422 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:31,422 | INFO |   Pincode 400067 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:34:32,077 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:34:32,080 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:32,080 | INFO |   Pincode 400067 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:34:32,844 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:34:32,846 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:32,846 | INFO |   Pincode 400067 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:34:33,611 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:34:33,614 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:33,614 | INFO |   Pincode 400067 | keyword: Hot Wheels Formula 1
+2026-05-05 17:34:34,247 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:34:34,249 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:34,812 | INFO |   Pincode 400097 | keyword: hot wheels
+2026-05-05 17:34:35,449 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:34:35,451 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:35,452 | INFO |   Pincode 400097 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:34:36,081 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:34:36,083 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:36,083 | INFO |   Pincode 400097 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:34:36,734 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:34:36,736 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:36,736 | INFO |   Pincode 400097 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:34:41,584 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:34:41,587 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:41,588 | INFO |   Pincode 400097 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:34:42,258 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:34:42,260 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:42,260 | INFO |   Pincode 400097 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:34:42,914 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:34:42,916 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:42,916 | INFO |   Pincode 400097 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:34:43,717 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:34:43,719 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:43,720 | INFO |   Pincode 400097 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:34:44,385 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:34:44,387 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:44,387 | INFO |   Pincode 400097 | keyword: Hot Wheels Formula 1
+2026-05-05 17:34:45,144 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:34:45,146 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:45,742 | INFO |   Pincode 401203 | keyword: hot wheels
+2026-05-05 17:34:46,387 | WARNING | Blinkit returned HTTP 404 for 'hot wheels'
+2026-05-05 17:34:46,390 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:46,391 | INFO |   Pincode 401203 | keyword: Hot Wheels Nissan Skyline GT-R(R32) Pandem
+2026-05-05 17:34:47,034 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Nissan Skyline GT-R(R32) Pandem'
+2026-05-05 17:34:47,036 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:47,036 | INFO |   Pincode 401203 | keyword: Hot Wheels Fast & Furious 1995 Mazda RX-7
+2026-05-05 17:34:47,686 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Fast & Furious 1995 Mazda RX-7'
+2026-05-05 17:34:47,690 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:47,691 | INFO |   Pincode 401203 | keyword: Hot Wheels 20 Toyota GR Supra
+2026-05-05 17:34:48,334 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 20 Toyota GR Supra'
+2026-05-05 17:34:48,336 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:48,336 | INFO |   Pincode 401203 | keyword: Hot Wheels BMW 635 CSI
+2026-05-05 17:34:49,005 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels BMW 635 CSI'
+2026-05-05 17:34:49,008 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:49,008 | INFO |   Pincode 401203 | keyword: Hot Wheels 17 Pagani Huayra
+2026-05-05 17:34:49,641 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels 17 Pagani Huayra'
+2026-05-05 17:34:49,643 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:49,644 | INFO |   Pincode 401203 | keyword: Hot Wheels Porsche 911 Canrrera
+2026-05-05 17:34:50,290 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Porsche 911 Canrrera'
+2026-05-05 17:34:50,292 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:50,292 | INFO |   Pincode 401203 | keyword: Hot Wheels '70 Dodge Hemi Challenger
+2026-05-05 17:34:51,087 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels '70 Dodge Hemi Challenger'
+2026-05-05 17:34:51,089 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:51,089 | INFO |   Pincode 401203 | keyword: Hot Wheels Formula 1
+2026-05-05 17:34:51,731 | WARNING | Blinkit returned HTTP 404 for 'Hot Wheels Formula 1'
+2026-05-05 17:34:51,733 | INFO |   -> 0 in-stock product(s) found
+2026-05-05 17:34:51,735 | INFO | Check complete.
+2026-05-05 17:34:51,737 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:34:52,379 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/sendMessage "HTTP/1.1 200 OK"
+2026-05-05 17:35:01,874 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:35:12,012 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:35:22,151 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:35:32,290 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:35:42,428 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:35:52,567 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:36:02,701 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:36:12,839 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:36:22,978 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:36:33,118 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:36:43,257 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:36:53,392 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:37:03,524 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:37:13,659 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:37:23,796 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:37:33,936 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:37:44,076 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:37:54,211 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:38:04,360 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:38:14,500 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:38:24,634 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:38:34,770 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:38:44,916 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:38:55,049 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:39:05,191 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:39:15,325 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:39:25,465 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:39:35,598 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:39:45,741 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:39:55,881 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:40:06,016 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:40:16,149 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:40:26,298 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:40:36,432 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:40:46,568 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:40:56,702 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:41:06,838 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:41:16,968 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:41:27,100 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:41:37,236 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:41:47,387 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:41:57,534 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:42:07,670 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:42:17,803 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:42:27,937 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:42:38,072 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:42:48,208 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:42:58,341 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:43:08,474 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"
+2026-05-05 17:43:18,610 | INFO | HTTP Request: POST https://api.telegram.org/bot8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4/getUpdates "HTTP/1.1 200 OK"

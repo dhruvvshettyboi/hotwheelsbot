@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Blinkit Hot Wheels Monitor - Telegram Bot
-Setup:
-  1. pip install python-telegram-bot requests
-  2. Replace BOT_TOKEN below with your token from @BotFather
-  3. Run: python bot.py
-  4. Open Telegram, find your bot, and send /start
+Railway-ready version: reads BOT_TOKEN from environment variable
 """
 
 import os
@@ -18,15 +14,17 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 import requests
 
-# Fix Windows console encoding
+# Fix Windows console encoding (only applies locally)
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 # ======================================================
-#  REPLACE THIS WITH YOUR TOKEN FROM BOTFATHER
+#  BOT TOKEN
+#  - On Railway: set this as an environment variable
+#  - Locally: paste your token between the quotes below
 # ======================================================
-BOT_TOKEN = "8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4"
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8670341641:AAEoR3EM2UkWg_w2DUK6cPREEXA-ZnJlOO4")
 
 # ------ Internals ------
 CONFIG_FILE = "config.json"
@@ -119,13 +117,11 @@ def extract_products(data):
     products = []
     if not data:
         return products
-
     items = data.get("objects", [])
     if not items:
         items = data.get("data", {}).get("products", [])
     if not items and isinstance(data, list):
         items = data
-
     for item in items:
         product = item.get("product", item)
         name = product.get("name", "").strip()
@@ -133,10 +129,8 @@ def extract_products(data):
         mrp = product.get("mrp", "N/A")
         in_stock = product.get("in_stock", product.get("available", True))
         product_id = str(product.get("id", product.get("product_id", "")))
-
         if name and in_stock and product_id:
             products.append({"id": product_id, "name": name, "price": price, "mrp": mrp})
-
     return products
 
 
@@ -185,7 +179,6 @@ async def check_and_notify(bot):
                 if unique_key not in notified_ids:
                     price_text = ("Rs." + str(p["price"])) if p["price"] != "N/A" else "Price unavailable"
                     mrp_text = (" (MRP: Rs." + str(p["mrp"]) + ")") if p["mrp"] != "N/A" else ""
-
                     msg = (
                         "Hot Wheels Alert!\n\n"
                         "Pincode: " + pincode + "\n"
@@ -204,11 +197,10 @@ async def check_and_notify(bot):
 
 
 # ======================================================
-#  SCHEDULED JOB (runs inside PTB's event loop)
+#  SCHEDULED JOB
 # ======================================================
 
 async def scheduled_job(context: ContextTypes.DEFAULT_TYPE):
-    """This is called automatically by PTB's JobQueue on the set interval."""
     logger.info("Scheduled check triggered.")
     await check_and_notify(context.bot)
 
@@ -235,34 +227,23 @@ async def cmd_start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         "/addpincode 400001"
     )
 
-
 async def cmd_addpincode(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     pincode = ctx.args[0].strip() if ctx.args else ""
     if not pincode or not pincode.isdigit() or len(pincode) != 6:
         await update.message.reply_text("Please provide a valid 6-digit PIN code.\nExample: /addpincode 400001")
         return
-
     config = load_config()
     if pincode in config["pincodes"]:
         await update.message.reply_text("Pincode " + pincode + " is already being monitored.")
         return
-
     await update.message.reply_text("Verifying pincode " + pincode + "...")
     lat, lon = pincode_to_coords(pincode)
     config["pincodes"].append(pincode)
     save_config(config)
-
     if lat:
-        await update.message.reply_text(
-            "Added pincode " + pincode + " (verified OK)\n"
-            "Now monitoring " + str(len(config["pincodes"])) + " pincode(s)."
-        )
+        await update.message.reply_text("Added pincode " + pincode + " (verified OK)\nNow monitoring " + str(len(config["pincodes"])) + " pincode(s).")
     else:
-        await update.message.reply_text(
-            "Added pincode " + pincode + " but could not verify it. Double check it is valid.\n"
-            "Now monitoring " + str(len(config["pincodes"])) + " pincode(s)."
-        )
-
+        await update.message.reply_text("Added pincode " + pincode + " but could not verify it.\nNow monitoring " + str(len(config["pincodes"])) + " pincode(s).")
 
 async def cmd_removepincode(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     pincode = ctx.args[0].strip() if ctx.args else ""
@@ -273,7 +254,6 @@ async def cmd_removepincode(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Removed pincode " + pincode + ".")
     else:
         await update.message.reply_text("Pincode " + pincode + " was not in the list.")
-
 
 async def cmd_addkeyword(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     keyword = " ".join(ctx.args).strip()
@@ -286,11 +266,7 @@ async def cmd_addkeyword(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         return
     config["keywords"].append(keyword)
     save_config(config)
-    await update.message.reply_text(
-        "Added keyword: " + keyword + "\n"
-        "Now monitoring " + str(len(config["keywords"])) + " keyword(s)."
-    )
-
+    await update.message.reply_text("Added keyword: " + keyword + "\nNow monitoring " + str(len(config["keywords"])) + " keyword(s).")
 
 async def cmd_removekeyword(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     keyword = " ".join(ctx.args).strip()
@@ -303,7 +279,6 @@ async def cmd_removekeyword(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     else:
         await update.message.reply_text("Keyword not found: " + keyword)
 
-
 async def cmd_setinterval(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     try:
         minutes = int(ctx.args[0])
@@ -313,13 +288,9 @@ async def cmd_setinterval(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         config = load_config()
         config["interval_minutes"] = minutes
         save_config(config)
-        await update.message.reply_text(
-            "Interval set to " + str(minutes) + " minutes.\n"
-            "Please restart the bot for this to take effect."
-        )
+        await update.message.reply_text("Interval set to " + str(minutes) + " minutes.\nPlease restart the bot for this to take effect.")
     except (IndexError, ValueError):
         await update.message.reply_text("Usage: /setinterval 30")
-
 
 async def cmd_status(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     config = load_config()
@@ -335,7 +306,6 @@ async def cmd_status(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
         "Last Check: " + last
     )
 
-
 async def cmd_checknow(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     config = load_config()
     pincodes = config.get("pincodes", [])
@@ -343,27 +313,22 @@ async def cmd_checknow(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     if not pincodes:
         await update.message.reply_text("No pincodes configured yet. Use /addpincode 400001 first.")
         return
-    await update.message.reply_text(
-        "Checking " + str(len(pincodes)) + " pincode(s) x " + str(len(keywords)) + " keyword(s)..."
-    )
+    await update.message.reply_text("Checking " + str(len(pincodes)) + " pincode(s) x " + str(len(keywords)) + " keyword(s)...")
     await check_and_notify(ctx.bot)
     await update.message.reply_text("Check done! You will get alerts above if anything was found.")
 
 
 # ======================================================
-#  STARTUP HOOK — schedules the job once PTB is ready
+#  STARTUP HOOK
 # ======================================================
 
 async def post_init(application: Application):
-    """Called automatically by PTB after it starts its event loop."""
     config = load_config()
     interval_minutes = config.get("interval_minutes", 30)
-    interval_seconds = interval_minutes * 60
-
     application.job_queue.run_repeating(
         scheduled_job,
-        interval=interval_seconds,
-        first=10,  # First check 10 seconds after startup
+        interval=interval_minutes * 60,
+        first=10,
         name="blinkit_monitor",
     )
     logger.info("Scheduler started: checking every %d minutes.", interval_minutes)
@@ -374,34 +339,24 @@ async def post_init(application: Application):
 # ======================================================
 
 def main():
-    if BOT_TOKEN == "PASTE_YOUR_BOT_TOKEN_HERE":
-        print("")
-        print("=" * 55)
-        print("  WARNING: You have not set your BOT_TOKEN yet!")
-        print("  Open bot.py and replace PASTE_YOUR_BOT_TOKEN_HERE")
-        print("  with the token you got from @BotFather on Telegram.")
-        print("=" * 55)
-        print("")
-        input("Press Enter to close...")
+    if BOT_TOKEN == "PASTE_YOUR_TOKEN_HERE":
+        print("ERROR: BOT_TOKEN not set. Set it as an environment variable or paste it in bot.py.")
         return
 
     try:
         config = load_config()
         interval = config.get("interval_minutes", 30)
-
-        print("")
         print("=" * 55)
         print("  Blinkit Hot Wheels Bot - STARTING")
         print("  Checking every " + str(interval) + " minutes")
         print("  All activity logged to bot.log")
         print("  Press Ctrl+C to stop")
         print("=" * 55)
-        print("")
 
         app = (
             Application.builder()
             .token(BOT_TOKEN)
-            .post_init(post_init)   # <-- schedules the job safely inside the event loop
+            .post_init(post_init)
             .build()
         )
 
@@ -417,13 +372,10 @@ def main():
         app.run_polling(allowed_updates=Update.ALL_TYPES)
 
     except Exception as e:
-        print("")
-        print("ERROR - Bot crashed with this message:")
-        print(str(e))
-        print("")
-        print("Full details written to bot.log - send that file for help.")
+        print("ERROR - Bot crashed: " + str(e))
         logger.error("Bot crashed: %s", traceback.format_exc())
-        input("Press Enter to close...")
+        if sys.platform == "win32":
+            input("Press Enter to close...")
 
 
 if __name__ == "__main__":
